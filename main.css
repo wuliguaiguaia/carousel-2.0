@@ -1,0 +1,22 @@
+#wrapper{
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container {
+   display: flex;
+   align-items: baseline; 
+   transition: transform 1s;
+}
+
+#button{
+    width: 100%;
+    text-align: center;
+}
+
+#prevNext{
+    text-align: center;
+    margin: 5px auto;
+}
+ 
