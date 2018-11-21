@@ -7,6 +7,14 @@ let $slide = $(slide),
 init();
 fakeImg();
 
+$(document).on("visibilitychange",()=>{
+    if(document.hidden){
+        clearInterval(timer);
+    }else{
+        $(wrapper).trigger("mouseleave")
+    }
+})
+
 $(wrapper).on("mouseenter", () => {
     clearInterval(timer);
 }).on("mouseleave", () => {
