@@ -9,7 +9,7 @@ fakeImg();
 
 $(document).on("visibilitychange",()=>{
     if(document.hidden){
-        clearInterval(timer);
+        $(wrapper).trigger("mouseenter")
     }else{
         $(wrapper).trigger("mouseleave")
     }
@@ -27,7 +27,6 @@ $(button).on("click", "button", (e) => {
     let $btn = $(e.currentTarget);
     let index = $btn.index();
     goSlide(index);
-
 });
 
 $(previous).on("click", () => {
